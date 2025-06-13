@@ -327,4 +327,24 @@ export default function POSPage() {
               <CardHeader className="bg-blue-50">
                 <CardTitle className="text-sm">Today's Stats</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">\
+              <CardContent className="space-y-4">
+                <div className="flex justify-between">
+                  <span>Transactions:</span>
+                  <span>{transactionCount}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Revenue:</span>
+                  <span>${dailyRevenue.toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Items Sold:</span>
+                  <span>{itemsSold}</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
